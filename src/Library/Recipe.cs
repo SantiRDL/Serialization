@@ -25,6 +25,15 @@ namespace Recipies
             this.Steps.Add(step);
         }
 
+       
+        
+        public string ConvertToJson()
+        {
+            return JsonSerializer.Serialize(this);
+        }
+
+
+
         public void RemoveStep(Step step)
         {
             this.Steps.Remove(step);
